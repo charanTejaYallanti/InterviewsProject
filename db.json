@@ -1,0 +1,20 @@
+{
+  "employee": [
+    {
+      "id": "6684",
+      "employeeID": "73feda1b8e",
+      "employeeName": "Charan",
+      "employeeAge": "21",
+      "employeeQualification": "M.tech",
+      "employeeSex": "male"
+    },
+    {
+      "id": "a675",
+      "employeeID": "14a5339cf56",
+      "employeeName": "ravi",
+      "employeeAge": "22",
+      "employeeQualification": "M.tech",
+      "employeeSex": "male"
+    }
+  ]
+}
