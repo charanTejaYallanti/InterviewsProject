@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const DisplayArrayOfObjects = () => {
   let intialdata = [
-    { id: 1, name: "charan", age: 25, education: "B.tech" },
+    { id: 1, name: "chn", age: 25, education: "B.tech" },
     {
       id: 2,
       name: "Teja",
