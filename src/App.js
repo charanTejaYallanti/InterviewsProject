@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
-
-import DestructuPromisesCallBackHellAsyncAwait from "./JavaScript/PromisesCallBackHellAsyncAwait.js";
-
+import AccountDisplay from "./Redux/AccountDisplay.js";
+import Form from "./Redux/form.js";
+import "./Redux/store.js";
+import "./Redux/form.js";
 function App() {
   return (
-    <div className="App">
-      <DestructuPromisesCallBackHellAsyncAwait />
+    <div>
+      <Form />
+      <AccountDisplay />
     </div>
   );
 }
