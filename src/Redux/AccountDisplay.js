@@ -16,10 +16,35 @@ const AccountDisplay = () => {
         </thead>
         <tbody>
           <tr>
-            <td>{data.accoutHolderName}</td>
-            <td>{data.balance}</td>
-            <td>{data.mobileNumber}</td>
+            <td>{data.account.accoutHolderName}</td>
+            <td>{data.account.balance}</td>
+            <td>{data.account.mobileNumber}</td>
           </tr>
+        </tbody>
+      </table>
+      Transaction Details
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.transaction.map((eachobj, index) => {
+            return (
+              <tr key={eachobj.id}>
+                <td>{eachobj.id}</td>
+                <td>{eachobj.amount}</td>
+                <td>{eachobj.date.toString()}</td>
+                <td>{eachobj.type}</td>
+                <td>{data.account.balance}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

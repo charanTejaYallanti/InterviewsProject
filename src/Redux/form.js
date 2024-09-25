@@ -25,6 +25,15 @@ const Form = () => {
         <button
           onClick={() => {
             dispatch({ type: "DEPOSIT", payload: amount });
+            dispatch({
+              type: "ADD_TRANSACTION",
+              payload: {
+                amount: amount,
+                date: new Date(),
+                type: "credit",
+                transactioniD: Math.random(),
+              },
+            });
             setAmount(" ");
           }}
         >
@@ -33,6 +42,15 @@ const Form = () => {
         <button
           onClick={() => {
             dispatch({ type: "WITHDRAW", payload: amount });
+            dispatch({
+              type: "ADD_TRANSACTION",
+              payload: {
+                amount: amount,
+                date: new Date(),
+                type: "Debit",
+                transactioniD: Math.random(),
+              },
+            });
             setAmount(" ");
           }}
         >
